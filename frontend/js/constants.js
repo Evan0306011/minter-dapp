@@ -1,4 +1,4 @@
-const contractAddress = "0x988FF4048B3e56612d382eC12f68aF588cEFb8dd"; //Replace with your own contract address
+const contractAddress = "0x09C9A1658dB81D6726d6C6f04049197Dd63E2Ad8"; //Replace with your own contract address
 const chain = 'polygon'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the AussieBloke's NFT Project!!";
