@@ -292,8 +292,9 @@ function setTotalPrice() {
   } else if (chain === 'polygon') {
     priceType = 'MATIC';
   }
-  const price = web3.utils.fromWei(totalPriceWei.toString(), 'ether');
-  totalPrice.innerText = `${price} ${priceType}`;
+  //const price = web3.utils.fromWei(totalPriceWei.toString(), 'ether');
+  
+  totalPrice.innerText = `${totalPriceWei} ${priceType}`;
   mintButton.disabled = false;
   mintInput.disabled = false;
 }
