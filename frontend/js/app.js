@@ -232,7 +232,8 @@ async function loadInfo() {
   const totalSupply = document.getElementById("totalSupply");
   const mintInput = document.getElementById("mintInput");
   
-  pricePerMint.innerText = `${price} ${priceType}`;
+  //pricePerMint.innerText = `${price} ${priceType}`;
+  pricePerMint.innerText = "10 MATIC";
   maxPerMint.innerText = `${info.deploymentConfig.tokensPerMint}`;
   totalSupply.innerText = `${info.deploymentConfig.maxSupply}`;
   mintInput.setAttribute("max", info.deploymentConfig.tokensPerMint);
