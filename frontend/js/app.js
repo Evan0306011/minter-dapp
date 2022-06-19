@@ -226,7 +226,8 @@ async function loadInfo() {
   } else if (chain === 'polygon') {
     priceType = 'MATIC';
   }
-  const price = web3.utils.fromWei(info.deploymentConfig.mintPrice, 'ether');
+  //const price = web3.utils.fromWei(info.deploymentConfig.mintPrice, 'ether');
+  const price = web3.utils.fromWei((info.deploymentConfig.tokensPerMint) * 0.000000000000000001 , 'ether');
   const pricePerMint = document.getElementById("pricePerMint");
   const maxPerMint = document.getElementById("maxPerMint");
   const totalSupply = document.getElementById("totalSupply");
@@ -293,8 +294,7 @@ function setTotalPrice() {
     priceType = 'MATIC';
   }
   const price = web3.utils.fromWei(totalPriceWei.toString(), 'ether');
-  //totalPrice.innerText = `${price} ${priceType}`;
-  totalPrice.innerText = "10 MATIC";
+  totalPrice.innerText = `${price} ${priceType}`;
   mintButton.disabled = false;
   mintInput.disabled = false;
 }
