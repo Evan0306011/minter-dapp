@@ -227,7 +227,8 @@ async function loadInfo() {
     priceType = 'MATIC';
   }
   //const price = web3.utils.fromWei(info.deploymentConfig.mintPrice, 'ether');
-  const price = web3.utils.fromWei((info.deploymentConfig.tokensPerMint) * 0.000000000000000001 , 'ether');
+  const price = web3.utils.fromWei((info.deploymentConfig.tokensPerMint) , 'ether');
+  price = price * 0.0000000000000000001;
   const pricePerMint = document.getElementById("pricePerMint");
   const maxPerMint = document.getElementById("maxPerMint");
   const totalSupply = document.getElementById("totalSupply");
