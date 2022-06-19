@@ -236,9 +236,9 @@ async function loadInfo() {
   
   pricePerMint.innerText = `${price} ${priceType}`;
   
-  maxPerMint.innerText = `${info.deploymentConfig.tokensPerMint}`;
+  maxPerMint.innerText = "10";
   totalSupply.innerText = `${info.deploymentConfig.maxSupply}`;
-  mintInput.setAttribute("max", info.deploymentConfig.tokensPerMint);
+  mintInput.setAttribute("max", "10");
 
   // MINT INPUT
   const mintIncrement = document.getElementById("mintIncrement");
