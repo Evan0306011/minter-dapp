@@ -1,9 +1,9 @@
 const contractAddress = "0xaeC30Ccd9AC9E668FaE67621CbDb103C78CaCCf3"; //Replace with your own contract address
 const chain = 'polygon'; // rinkeby or polygon
 
-const welcome_h1 = "Welcome to the AussieBloke22s NFT Project!!";
+const welcome_h1 = "Welcome to the AussieBloke22 NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
-const welcome_p = 'The CodeCats NFT Project is a decentralized, open-source project that aims to demonstrate how to develope and launch your own NFT Collection.';
+const welcome_p = 'The AussieBloke22 NFT Project is a decentralized, open-source project that aims to demonstrate how to develope and launch your own NFT Collection.';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";
